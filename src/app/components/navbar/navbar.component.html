@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="left-content">
+      <dx-tree-view
+        [dataSource]="continents"
+        selectionMode="single"
+        [selectByClick]="true"
+        (onItemClick)="changeSelection($event)"
+      ></dx-tree-view>
+    </div>
+    <div class="right-content">
+      <app-tab-content [employees]="employees" [selectedIndex]="selectedIndex"></app-tab-content>
+    </div>
+  </div>
+  
